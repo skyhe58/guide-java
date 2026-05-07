@@ -1,0 +1,88 @@
+# ============================================================
+# 带健康检查探针的 Deployment 示例
+# 包含 startupProbe / livenessProbe / readinessProbe
+# 适用于 Spring Boot 应用（配合 Actuator）
+# ============================================================
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-app-with-probes
+  labels:
+    app: java-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: java-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: java-app
+    spec:
+      terminationGracePeriodSeconds: 60
+      containers:
+        - name: java-app
+          image: my-java-app:1.0.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: JAVA_OPTS
+              value: "-XX:MaxRAMPercentage=75.0 -XX:+UseG1GC -XX:+UseContainerSupport"
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+
+          # ---- 启动探针 ----
+          # Java 应用启动较慢（JVM 初始化 + Spring 上下文加载）
+          # startupProbe 在成功之前，liveness/readiness 不会执行
+          # 最大等待时间 = initialDelaySeconds + periodSeconds × failureThreshold
+          #              = 10 + 10 × 30 = 310 秒
+          startupProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 30
+            timeoutSeconds: 3
+
+          # ---- 存活探针 ----
+          # 检测应用是否存活，失败后 K8s 重启容器
+          # 用于检测死锁、无限循环等异常
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+            periodSeconds: 15
+            failureThreshold: 3
+            timeoutSeconds: 3
+
+          # ---- 就绪探针 ----
+          # 检测应用是否准备好接收流量
+          # 失败后从 Service Endpoints 中摘除，不再接收新请求
+          # 用于检测依赖服务（DB/Redis）是否可用
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8080
+            periodSeconds: 10
+            failureThreshold: 3
+            timeoutSeconds: 3
+
+          # 生命周期钩子
+          lifecycle:
+            preStop:
+              exec:
+                # 优雅停机：先等待一段时间让 K8s 更新 Endpoints
+                # 避免在 Service 摘除 Pod 之前就停止接收请求
+                command: ["sh", "-c", "sleep 10"]

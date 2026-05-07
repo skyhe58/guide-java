@@ -1,0 +1,52 @@
+# ============================================================
+# Ingress 配置示例
+# 提供 HTTP/HTTPS 路由，将外部流量路由到集群内 Service
+# 前提：集群已安装 Ingress Controller（如 nginx-ingress）
+# ============================================================
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: java-app-ingress
+  labels:
+    app: java-app
+  annotations:
+    # Nginx Ingress Controller 注解
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    # 限流：每秒 10 个请求
+    nginx.ingress.kubernetes.io/limit-rps: "10"
+    # 请求体大小限制（文件上传场景）
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    # 超时配置
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "10"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "60"
+spec:
+  ingressClassName: nginx
+  # TLS 配置
+  tls:
+    - hosts:
+        - api.example.com
+      secretName: tls-secret
+  rules:
+    # 主域名路由
+    - host: api.example.com
+      http:
+        paths:
+          # API 路由
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: java-app-svc
+                port:
+                  number: 80
+          # Actuator 监控端点（可选，生产环境建议限制访问）
+          - path: /actuator
+            pathType: Prefix
+            backend:
+              service:
+                name: java-app-svc
+                port:
+                  number: 80

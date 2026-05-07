@@ -1,0 +1,37 @@
+# ============================================================
+# Nginx 最新版（挂载配置目录）
+# 使用方式：docker compose -f docker-compose.nginx.yml up -d
+# 访问地址：http://localhost:80
+# ============================================================
+
+services:
+  # ---- Nginx ----
+  # 高性能 Web 服务器 / 反向代理 / 负载均衡器
+  # 挂载本地 conf 目录，方便修改配置后重载
+  nginx:
+    image: nginx:latest
+    container_name: kb-nginx
+    ports:
+      - "80:80"       # HTTP 端口
+      - "443:443"     # HTTPS 端口
+    volumes:
+      # 挂载自定义配置目录（需提前创建 conf/ 目录并放置配置文件）
+      - ./nginx/conf:/etc/nginx/conf.d
+      # 挂载主配置文件（可选，取消注释后使用）
+      # - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      # 挂载静态资源目录
+      - ./nginx/html:/usr/share/nginx/html
+      # 挂载日志目录，方便查看访问日志和错误日志
+      - nginx-logs:/var/log/nginx
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsSL http://localhost/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+# 数据卷定义
+volumes:
+  nginx-logs:
+    driver: local

@@ -1,0 +1,57 @@
+# ============================================================
+# HPA (Horizontal Pod Autoscaler) 配置示例
+# 基于 CPU 和内存指标自动扩缩容
+# 前提：集群已安装 Metrics Server
+# ============================================================
+
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: java-app-hpa
+  labels:
+    app: java-app
+spec:
+  # 目标 Deployment
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: java-app
+  # 副本数范围
+  minReplicas: 2
+  maxReplicas: 10
+  # 扩缩容指标
+  metrics:
+    # 基于 CPU 利用率
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50    # CPU 使用率超过 50% 触发扩容
+    # 基于内存利用率
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: Utilization
+          averageUtilization: 70    # 内存使用率超过 70% 触发扩容
+  # 扩缩容行为控制
+  behavior:
+    # 扩容策略
+    scaleUp:
+      stabilizationWindowSeconds: 60    # 扩容稳定窗口 60 秒
+      policies:
+        - type: Pods
+          value: 2                       # 每次最多扩 2 个 Pod
+          periodSeconds: 60
+        - type: Percent
+          value: 50                      # 或每次最多扩 50%
+          periodSeconds: 60
+      selectPolicy: Max                  # 取两个策略中的较大值
+    # 缩容策略（更保守，避免频繁抖动）
+    scaleDown:
+      stabilizationWindowSeconds: 300   # 缩容稳定窗口 5 分钟
+      policies:
+        - type: Percent
+          value: 10                      # 每次最多缩 10%
+          periodSeconds: 60

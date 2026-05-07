@@ -1,0 +1,50 @@
+# ============================================================
+# Elasticsearch 8（单节点模式）
+# 使用方式：docker compose -f docker-compose.es.yml up -d
+# 访问地址：http://localhost:9200
+# ============================================================
+
+services:
+  # ---- Elasticsearch 8 单节点 ----
+  # 分布式搜索与分析引擎，用于全文检索、日志分析等场景
+  # 单节点开发模式，禁用安全认证以简化本地开发
+  elasticsearch:
+    image: elasticsearch:8.15.0
+    container_name: kb-elasticsearch
+    ports:
+      - "9200:9200"   # HTTP API 端口
+      - "9300:9300"   # 节点间通信端口
+    environment:
+      # 单节点模式，适合本地开发
+      discovery.type: single-node
+      # 禁用安全认证（仅限开发环境）
+      xpack.security.enabled: "false"
+      xpack.security.enrollment.enabled: "false"
+      # JVM 堆内存设置（开发环境 512MB 足够）
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+      # 集群名称
+      cluster.name: kb-es-cluster
+      # 节点名称
+      node.name: kb-es-node-1
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+      - es-plugins:/usr/share/elasticsearch/plugins
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsSL http://localhost:9200/_cluster/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+    restart: unless-stopped
+    # 解除内存锁定限制，提升性能
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+
+# 数据卷定义
+volumes:
+  es-data:
+    driver: local
+  es-plugins:
+    driver: local

@@ -1,0 +1,120 @@
+# ============================================================
+# Apollo 配置中心（configservice + adminservice + portal + MySQL）
+# 使用方式：docker compose -f docker-compose.apollo.yml up -d
+# Portal 管理界面：http://localhost:8070（默认账号 apollo/admin）
+# ============================================================
+
+services:
+  # ---- Apollo 专用 MySQL ----
+  # Apollo 需要独立的 MySQL 存储配置数据
+  # 包含 ApolloConfigDB 和 ApolloPortalDB 两个数据库
+  apollo-mysql:
+    image: mysql:8.0
+    container_name: kb-apollo-mysql
+    ports:
+      - "13306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: apollo_root
+      TZ: Asia/Shanghai
+    volumes:
+      - apollo-mysql-data:/var/lib/mysql
+      # 可在此目录放置 Apollo 初始化 SQL 脚本
+      - ./init/apollo:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-papollo_root"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    restart: unless-stopped
+
+  # ---- Apollo ConfigService ----
+  # 配置服务：提供配置读取、推送等功能
+  # 同时承担 Eureka 注册中心角色（Apollo 内部服务注册）
+  apollo-configservice:
+    image: apolloconfig/apollo-configservice:2.3.0
+    container_name: kb-apollo-configservice
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://apollo-mysql:3306/ApolloConfigDB?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: apollo_root
+      EUREKA_INSTANCE_HOME_PAGE_URL: http://apollo-configservice:8080
+    depends_on:
+      apollo-mysql:
+        condition: service_healthy
+    volumes:
+      - apollo-configservice-logs:/opt/logs
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsSL http://localhost:8080/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    restart: unless-stopped
+
+  # ---- Apollo AdminService ----
+  # 管理服务：提供配置修改、发布等功能
+  apollo-adminservice:
+    image: apolloconfig/apollo-adminservice:2.3.0
+    container_name: kb-apollo-adminservice
+    ports:
+      - "8090:8090"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://apollo-mysql:3306/ApolloConfigDB?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: apollo_root
+      EUREKA_INSTANCE_HOME_PAGE_URL: http://apollo-adminservice:8090
+    depends_on:
+      apollo-configservice:
+        condition: service_healthy
+    volumes:
+      - apollo-adminservice-logs:/opt/logs
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsSL http://localhost:8090/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    restart: unless-stopped
+
+  # ---- Apollo Portal ----
+  # 管理门户：提供 Web 界面进行配置管理
+  # 默认登录账号：apollo / admin
+  apollo-portal:
+    image: apolloconfig/apollo-portal:2.3.0
+    container_name: kb-apollo-portal
+    ports:
+      - "8070:8070"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://apollo-mysql:3306/ApolloPortalDB?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: apollo_root
+      # 配置可管理的环境列表，DEV 为开发环境
+      APOLLO_PORTAL_ENVS: dev
+      # 指定各环境的 Meta Server 地址（ConfigService 地址）
+      DEV_META: http://apollo-configservice:8080
+    depends_on:
+      apollo-adminservice:
+        condition: service_healthy
+    volumes:
+      - apollo-portal-logs:/opt/logs
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsSL http://localhost:8070/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    restart: unless-stopped
+
+# 数据卷定义
+volumes:
+  apollo-mysql-data:
+    driver: local
+  apollo-configservice-logs:
+    driver: local
+  apollo-adminservice-logs:
+    driver: local
+  apollo-portal-logs:
+    driver: local

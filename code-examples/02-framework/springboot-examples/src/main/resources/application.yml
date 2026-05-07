@@ -1,0 +1,38 @@
+# Spring Boot 示例应用配置
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springboot-demo
+
+  # 缓存配置（默认使用内存缓存）
+  cache:
+    type: simple
+
+# 自定义应用配置（对应 ConfigDemo.java）
+app:
+  name: springboot-demo
+  max-retry: 3
+  timeout: 30s
+  servers:
+    - server1.example.com
+    - server2.example.com
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.example.springboot: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] [%X{traceId:-}] %-5level %logger{36} - %msg%n"
+
+# Actuator 配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,loggers,appinfo
+  endpoint:
+    health:
+      show-details: always

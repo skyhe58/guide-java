@@ -1,0 +1,8 @@
+# ZooKeeper 注册发现配置（替代 Consul）
+# 启动方式：mvn spring-boot:run -Dspring-boot.run.profiles=zk
+spring:
+  cloud:
+    consul:
+      enabled: false
+    zookeeper:
+      connect-string: localhost:2181

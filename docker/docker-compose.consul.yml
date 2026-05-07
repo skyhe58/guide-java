@@ -1,0 +1,34 @@
+# ============================================================
+# Consul 1.18+（开发模式，带 Web UI）
+# 使用方式：docker compose -f docker-compose.consul.yml up -d
+# Web UI 地址：http://localhost:8500
+# ============================================================
+
+services:
+  # ---- Consul 服务注册与发现 ----
+  # HashiCorp Consul：服务发现、健康检查、KV 存储、多数据中心
+  # 开发模式启动，数据存储在内存中，适合本地开发和测试
+  consul:
+    image: hashicorp/consul:1.18
+    container_name: kb-consul
+    ports:
+      - "8500:8500"   # HTTP API + Web UI 端口
+      - "8600:8600/udp" # DNS 端口
+      - "8600:8600/tcp" # DNS 端口（TCP）
+    # 开发模式启动：单节点、无持久化、自带 UI
+    # -client 0.0.0.0 允许外部访问
+    command: agent -dev -client=0.0.0.0 -ui
+    volumes:
+      - consul-data:/consul/data
+    healthcheck:
+      test: ["CMD", "consul", "members"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+# 数据卷定义
+volumes:
+  consul-data:
+    driver: local

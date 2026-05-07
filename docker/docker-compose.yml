@@ -1,0 +1,55 @@
+# ============================================================
+# 基础中间件：Redis 7 + MySQL 8
+# 使用方式：docker compose up -d
+# ============================================================
+
+services:
+  # ---- Redis 7 ----
+  # 高性能键值存储，用于缓存、分布式锁、Session 等场景
+  redis:
+    image: redis:7-alpine
+    container_name: kb-redis
+    ports:
+      - "6379:6379"
+    # 启动时开启 AOF 持久化，设置最大内存 256MB，内存淘汰策略为 allkeys-lru
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # ---- MySQL 8 ----
+  # 关系型数据库，用于业务数据存储
+  mysql:
+    image: mysql:8.0
+    container_name: kb-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123456
+      MYSQL_DATABASE: knowledge_base
+      MYSQL_CHARSET: utf8mb4
+      MYSQL_COLLATION: utf8mb4_unicode_ci
+      TZ: Asia/Shanghai
+    volumes:
+      - mysql-data:/var/lib/mysql
+      # 可在此目录放置初始化 SQL 脚本，容器首次启动时自动执行
+      - ./init/mysql:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot123456"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    restart: unless-stopped
+
+# 数据卷定义，确保容器重启后数据不丢失
+volumes:
+  redis-data:
+    driver: local
+  mysql-data:
+    driver: local

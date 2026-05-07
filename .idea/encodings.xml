@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/concurrent-programming/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/design-patterns/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/java-advanced/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/java-basics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/jvm-deep-dive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/01-java-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/network-programming/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/springboot-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/springcloud-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/springcloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/springcloud-sharding/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/02-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/database-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/elasticsearch-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/minio-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/mongodb-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/redis-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/03-data-store/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/config-center-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/mq-kafka-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/mq-mqtt-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/mq-rabbitmq-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/registry-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/04-middleware/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/05-distributed/distributed-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/05-distributed/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/05-distributed/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/06-devops/cicd-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/06-devops/docker-k8s-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/06-devops/monitoring-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/06-devops/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/06-devops/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/07-ai/ai-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/07-ai/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/07-ai/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/code-examples/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

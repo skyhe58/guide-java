@@ -1,0 +1,43 @@
+# Kafka 独立 Profile 配置
+# 启动方式：mvn spring-boot:run -Dspring-boot.run.profiles=kafka
+# 用途：覆盖默认 Kafka 配置，适用于连接独立 Kafka 集群
+
+spring:
+  kafka:
+    # Kafka Broker 地址（多个用逗号分隔）
+    bootstrap-servers: localhost:9092
+    # 生产者配置
+    producer:
+      # 消息确认机制（all = 所有 ISR 副本确认，最可靠）
+      acks: all
+      # 发送失败重试次数
+      retries: 3
+      # 批量发送大小（字节）
+      batch-size: 16384
+      # 缓冲区大小（字节）
+      buffer-memory: 33554432
+      # 序列化器
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # 幂等性（配合 acks=all 使用）
+      properties:
+        enable.idempotence: true
+    # 消费者配置
+    consumer:
+      # 消费者组 ID
+      group-id: demo-group
+      # 无 offset 时从最早开始消费
+      auto-offset-reset: earliest
+      # 关闭自动提交（手动提交更可靠）
+      enable-auto-commit: false
+      # 反序列化器
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      # 单次 poll 最大记录数
+      max-poll-records: 100
+    # 监听器配置
+    listener:
+      # 手动提交 offset
+      ack-mode: manual_immediate
+      # 并发消费者数量
+      concurrency: 3

@@ -1,0 +1,22 @@
+# ===== Maven 构建产物 =====
+**/target/
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+
+# ===== macOS =====
+.DS_Store
+
+# ===== 日志 =====
+logs/
+*.log
+
+# ===== VitePress（docs 站点相关） =====
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/node_modules/
+
+# ===== Spring Cloud 运行时日志 =====
+02-framework/springcloud-examples/logs/

@@ -1,0 +1,6 @@
+# 分库分表配置（多库多表）
+# 启动方式：mvn spring-boot:run -Dspring-boot.run.profiles=db-table
+spring:
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:sharding-config-db-table.yaml

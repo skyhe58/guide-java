@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="docker-k8s-examples" />
+        <module name="springcloud-gateway" />
+        <module name="mongodb-examples" />
+        <module name="ai-examples" />
+        <module name="registry-examples" />
+        <module name="network-programming" />
+        <module name="springcloud-examples" />
+        <module name="mq-kafka-examples" />
+        <module name="java-advanced" />
+        <module name="mq-rabbitmq-examples" />
+        <module name="jvm-deep-dive" />
+        <module name="database-examples" />
+        <module name="config-center-examples" />
+        <module name="minio-examples" />
+        <module name="design-patterns" />
+        <module name="cicd-examples" />
+        <module name="springboot-examples" />
+        <module name="elasticsearch-examples" />
+        <module name="monitoring-examples" />
+        <module name="redis-examples" />
+        <module name="java-basics" />
+        <module name="distributed-examples" />
+        <module name="concurrent-programming" />
+        <module name="springcloud-sharding" />
+        <module name="mq-mqtt-examples" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ai-examples" options="-parameters" />
+      <module name="cicd-examples" options="-parameters" />
+      <module name="concurrent-programming" options="-parameters" />
+      <module name="config-center-examples" options="-parameters" />
+      <module name="database-examples" options="-parameters" />
+      <module name="design-patterns" options="-parameters" />
+      <module name="distributed-examples" options="-parameters" />
+      <module name="docker-k8s-examples" options="-parameters" />
+      <module name="elasticsearch-examples" options="-parameters" />
+      <module name="java-advanced" options="-parameters" />
+      <module name="java-basics" options="-parameters" />
+      <module name="jvm-deep-dive" options="-parameters" />
+      <module name="minio-examples" options="-parameters" />
+      <module name="mongodb-examples" options="-parameters" />
+      <module name="monitoring-examples" options="-parameters" />
+      <module name="mq-kafka-examples" options="-parameters" />
+      <module name="mq-mqtt-examples" options="-parameters" />
+      <module name="mq-rabbitmq-examples" options="-parameters" />
+      <module name="network-programming" options="-parameters" />
+      <module name="redis-examples" options="-parameters" />
+      <module name="registry-examples" options="-parameters" />
+      <module name="springboot-examples" options="-parameters" />
+      <module name="springcloud-examples" options="-parameters" />
+      <module name="springcloud-gateway" options="-parameters" />
+      <module name="springcloud-sharding" options="-parameters" />
+    </option>
+  </component>
+</project>

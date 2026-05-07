@@ -1,0 +1,24 @@
+{
+  "name": "java-knowledge-base-docs",
+  "version": "1.0.0",
+  "description": "Java 个人知识库 - VitePress 文档站点",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "dayjs": "1.11.13",
+    "mermaid": "10.9.1",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "2.0.17"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "pnpm": {
+    "overrides": {
+      "dayjs": "1.11.13"
+    }
+  }
+}

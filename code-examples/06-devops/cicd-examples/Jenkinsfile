@@ -1,0 +1,151 @@
+/**
+ * Java 项目标准 Jenkinsfile 示例
+ *
+ * 流水线阶段:
+ *   1. Checkout — 拉取代码
+ *   2. Build    — Maven 编译
+ *   3. Test     — 单元测试
+ *   4. Scan     — SonarQube 代码扫描
+ *   5. Docker   — 构建并推送镜像
+ *   6. Deploy   — 部署到 K8s
+ */
+pipeline {
+    agent any
+
+    environment {
+        DOCKER_REGISTRY = 'registry.example.com'
+        APP_NAME = 'my-java-app'
+        JAVA_VERSION = '21'
+    }
+
+    tools {
+        maven 'Maven-3.9'
+        jdk 'JDK-21'
+    }
+
+    options {
+        timeout(time: 30, unit: 'MINUTES')
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+                echo "Branch: ${env.BRANCH_NAME}, Commit: ${env.GIT_COMMIT}"
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean compile -DskipTests -T 4'
+            }
+        }
+
+        stage('Test') {
+            parallel {
+                stage('Unit Test') {
+                    steps {
+                        sh 'mvn test'
+                    }
+                    post {
+                        always {
+                            junit '**/target/surefire-reports/*.xml'
+                        }
+                    }
+                }
+                stage('Integration Test') {
+                    when {
+                        anyOf {
+                            branch 'main'
+                            branch 'develop'
+                        }
+                    }
+                    steps {
+                        sh 'mvn verify -DskipUnitTests'
+                    }
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            when {
+                anyOf {
+                    branch 'main'
+                    branch 'develop'
+                }
+            }
+            steps {
+                withSonarQubeEnv('SonarQube') {
+                    sh 'mvn sonar:sonar'
+                }
+            }
+        }
+
+        stage('Docker Build & Push') {
+            when {
+                branch 'main'
+            }
+            steps {
+                script {
+                    def imageTag = "${DOCKER_REGISTRY}/${APP_NAME}:${BUILD_NUMBER}"
+                    def image = docker.build(imageTag)
+                    docker.withRegistry("https://${DOCKER_REGISTRY}", 'docker-credentials') {
+                        image.push()
+                        image.push('latest')
+                    }
+                    echo "Image pushed: ${imageTag}"
+                }
+            }
+        }
+
+        stage('Deploy to Staging') {
+            when {
+                branch 'main'
+            }
+            steps {
+                sh """
+                    kubectl --namespace=staging set image \
+                        deployment/${APP_NAME} \
+                        ${APP_NAME}=${DOCKER_REGISTRY}/${APP_NAME}:${BUILD_NUMBER}
+                """
+                sh "kubectl --namespace=staging rollout status deployment/${APP_NAME} --timeout=120s"
+            }
+        }
+
+        stage('Deploy to Production') {
+            when {
+                branch 'main'
+            }
+            input {
+                message '确认部署到生产环境？'
+                ok '确认部署'
+            }
+            steps {
+                sh """
+                    kubectl --namespace=production set image \
+                        deployment/${APP_NAME} \
+                        ${APP_NAME}=${DOCKER_REGISTRY}/${APP_NAME}:${BUILD_NUMBER}
+                """
+                sh "kubectl --namespace=production rollout status deployment/${APP_NAME} --timeout=180s"
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '构建成功!'
+            // slackSend channel: '#deployments', color: 'good',
+            //     message: "✅ ${APP_NAME} #${BUILD_NUMBER} 构建成功"
+        }
+        failure {
+            echo '构建失败!'
+            // slackSend channel: '#deployments', color: 'danger',
+            //     message: "❌ ${APP_NAME} #${BUILD_NUMBER} 构建失败"
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

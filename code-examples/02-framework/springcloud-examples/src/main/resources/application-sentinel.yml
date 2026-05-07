@@ -1,0 +1,29 @@
+# Sentinel 熔断降级配置（替代 Resilience4j）
+# 启动方式：mvn spring-boot:run -Dspring-boot.run.profiles=sentinel
+# 前提：需要在 pom.xml 中添加 spring-cloud-starter-alibaba-sentinel 依赖
+# 用途：切换熔断实现为 Alibaba Sentinel
+
+spring:
+  cloud:
+    # Sentinel 控制台配置
+    sentinel:
+      transport:
+        # Sentinel Dashboard 地址
+        dashboard: localhost:8858
+        # 与 Dashboard 通信端口
+        port: 8719
+      # 饥饿加载（启动时即初始化，而非首次调用时）
+      eager: true
+
+# 关闭 Resilience4j（避免冲突）
+resilience4j:
+  circuitbreaker:
+    instances:
+      demoService:
+        # 保留配置但不生效，Sentinel 接管熔断逻辑
+        enabled: false
+
+# Feign 集成 Sentinel
+feign:
+  sentinel:
+    enabled: true

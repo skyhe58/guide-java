@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>java-knowledge-base</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>java-core</artifactId>
+    <packaging>pom</packaging>
+    <name>Java 核心</name>
+    <description>Java 核心知识代码示例分组：基础、进阶、并发、JVM、设计模式</description>
+
+    <modules>
+        <module>java-basics</module>
+        <module>java-advanced</module>
+        <module>concurrent-programming</module>
+        <module>jvm-deep-dive</module>
+        <module>design-patterns</module>
+    </modules>
+
+</project>

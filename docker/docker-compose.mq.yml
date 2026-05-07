@@ -1,0 +1,68 @@
+# ============================================================
+# 消息队列：RabbitMQ 3 管理版 + Kafka（KRaft 模式）
+# 使用方式：docker compose -f docker-compose.mq.yml up -d
+# ============================================================
+
+services:
+  # ---- RabbitMQ 3 管理版 ----
+  # AMQP 消息中间件，自带 Web 管理界面
+  # 管理界面地址：http://localhost:15672（默认账号 guest/guest）
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: kb-rabbitmq
+    ports:
+      - "5672:5672"     # AMQP 协议端口
+      - "15672:15672"   # Web 管理界面端口
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin123
+      RABBITMQ_DEFAULT_VHOST: /
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  # ---- Kafka（KRaft 模式，无需 Zookeeper） ----
+  # 高吞吐分布式消息系统，使用 KRaft 模式简化部署
+  kafka:
+    image: apache/kafka:3.8.0
+    container_name: kb-kafka
+    ports:
+      - "9092:9092"     # 外部访问端口
+    environment:
+      # KRaft 模式配置
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      # 监听器配置：PLAINTEXT 对外，CONTROLLER 用于内部选举
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      # 集群 ID（KRaft 模式必需）
+      KAFKA_CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
+      # 默认副本因子和分区数（单节点设为 1）
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_NUM_PARTITIONS: 3
+      KAFKA_LOG_RETENTION_HOURS: 168
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-broker-api-versions.sh --bootstrap-server localhost:9092 > /dev/null 2>&1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+    restart: unless-stopped
+
+# 数据卷定义
+volumes:
+  rabbitmq-data:
+    driver: local
+  kafka-data:
+    driver: local

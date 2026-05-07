@@ -1,0 +1,33 @@
+# RabbitMQ 独立 Profile 配置
+# 启动方式：mvn spring-boot:run -Dspring-boot.run.profiles=rabbitmq
+# 用途：覆盖默认 RabbitMQ 配置，适用于连接独立 RabbitMQ 集群
+
+spring:
+  rabbitmq:
+    # RabbitMQ 服务地址
+    host: localhost
+    port: 5672
+    # 认证信息
+    username: guest
+    password: guest
+    # 虚拟主机
+    virtual-host: /
+    # 发布确认模式（correlated = 异步确认，simple = 同步确认）
+    publisher-confirm-type: correlated
+    # 发布退回（消息无法路由到队列时回调）
+    publisher-returns: true
+    # 消费者配置
+    listener:
+      simple:
+        # 手动确认模式（生产环境推荐）
+        acknowledge-mode: manual
+        # 预取数量（每次从队列拉取的消息数）
+        prefetch: 1
+        # 并发消费者数量
+        concurrency: 3
+        max-concurrency: 10
+        # 消费失败重试
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000ms

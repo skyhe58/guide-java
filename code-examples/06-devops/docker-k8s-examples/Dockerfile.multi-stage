@@ -1,0 +1,45 @@
+# ============================================================
+# Java 应用多阶段构建 Dockerfile
+# 阶段 1：使用 Maven 编译打包
+# 阶段 2：使用 JRE-Alpine 运行
+# 最终镜像约 150MB（对比单阶段 ~800MB）
+# ============================================================
+
+# ---- 阶段 1：构建 ----
+FROM maven:3.9-eclipse-temurin-21 AS builder
+WORKDIR /app
+
+# 先复制 POM 文件，利用 Docker 缓存下载依赖
+# 只有 pom.xml 变化时才重新下载依赖
+COPY pom.xml .
+RUN mvn dependency:resolve -B
+
+# 再复制源码，编译打包
+COPY src/ src/
+RUN mvn package -DskipTests -B
+
+# ---- 阶段 2：运行 ----
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+
+# 安全：创建非 root 用户
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+# 从构建阶段复制 JAR（只复制最终产物，不包含 Maven/源码）
+COPY --from=builder /app/target/*.jar app.jar
+
+# 切换到非 root 用户
+USER appuser
+
+# JVM 容器优化参数
+ENV JAVA_OPTS="\
+  -XX:MaxRAMPercentage=75.0 \
+  -XX:InitialRAMPercentage=50.0 \
+  -XX:+UseG1GC \
+  -XX:+UseContainerSupport \
+  -Djava.security.egd=file:/dev/./urandom"
+
+EXPOSE 8080
+STOPSIGNAL SIGTERM
+
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]

@@ -1,0 +1,63 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springcloud-gateway
+  
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        health-check-interval: 10s
+    
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      
+      routes:
+        # 业务服务路由
+        - id: demo-service
+          uri: lb://springcloud-demo
+          predicates:
+            - Path=/api/demo/**
+          filters:
+            - StripPrefix=1
+        
+        # 用户服务路由
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - StripPrefix=1
+        
+        # 分库分表服务路由
+        - id: sharding-service
+          uri: lb://sharding-service
+          predicates:
+            - Path=/api/sharding/**
+          filters:
+            - StripPrefix=1
+  
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,gateway
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
