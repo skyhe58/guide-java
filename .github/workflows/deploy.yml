@@ -21,6 +21,10 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# 适配 Node.js 24（GitHub Actions 将于 2026-06-02 强制迁移）
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
