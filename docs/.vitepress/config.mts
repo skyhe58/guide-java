@@ -7,6 +7,7 @@ export default withMermaid(
     title: 'Java 知识库',
     description: 'Java 开发者的个人知识库 — 系统学习、面试准备、知识复习',
     lang: 'zh-CN',
+    base: '/guide-java/',
 
     // 修复 dayjs ESM default export 问题
     vite: {

@@ -1,0 +1,12 @@
+# VitePress 构建产物（CI 会重新构建）
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Node.js
+node_modules/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
