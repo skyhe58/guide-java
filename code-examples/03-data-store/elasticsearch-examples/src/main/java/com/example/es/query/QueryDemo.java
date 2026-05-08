@@ -399,7 +399,6 @@ public class QueryDemo {
             System.out.println("  清理：已删除测试索引 " + indexName);
             System.out.println("  提示：如需保留数据，注释掉 cleanup() 调用即可");
         }
-        }
 
         /** 写入测试数据 */
         static void prepareTestData(co.elastic.clients.elasticsearch.ElasticsearchClient client,
@@ -496,7 +495,9 @@ public class QueryDemo {
             var response = client.search(s -> s
                             .index(indexName)
                             .query(q -> q.range(r -> r
-                                    .number(n -> n.field("views").gte(5000.0).lte(10000.0)))),
+                                    .field("views")
+                                    .gte(co.elastic.clients.json.JsonData.of(5000))
+                                    .lte(co.elastic.clients.json.JsonData.of(10000)))),
                     java.util.Map.class);
 
             System.out.printf("    命中 %d 篇：%n", response.hits().total().value());
@@ -517,7 +518,7 @@ public class QueryDemo {
                             .index(indexName)
                             .query(q -> q.bool(b -> b
                                     .must(m -> m.match(mt -> mt.field("content").query("Java")))
-                                    .filter(f -> f.range(r -> r.number(n -> n.field("views").gte(3000.0))))
+                                    .filter(f -> f.range(r -> r.field("views").gte(co.elastic.clients.json.JsonData.of(3000))))
                                     .mustNot(mn -> mn.term(t -> t.field("category").value("架构"))))),
                     java.util.Map.class);
 
