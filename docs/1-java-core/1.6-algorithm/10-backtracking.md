@@ -273,7 +273,8 @@ private void backtrackPhone(String digits, int index,
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/backtrack/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/backtrack/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/backtrack/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/backtrack/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/backtrack/ -->
 
 ## 常见面试题
 

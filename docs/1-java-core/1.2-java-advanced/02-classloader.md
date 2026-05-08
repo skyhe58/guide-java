@@ -170,7 +170,8 @@ Class<?> clazz = loader.loadClass("com.example.MyClass");
 ServiceLoader<Driver> drivers = ServiceLoader.load(Driver.class);
 ```
 
-> 💻 完整可运行代码：[ClassLoaderDemo.java](../../../code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/classloader/ClassLoaderDemo.java)
+> 💻 完整可运行代码：[ClassLoaderDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/classloader/ClassLoaderDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/classloader/ClassLoaderDemo.java -->
 
 ## 常见面试题
 

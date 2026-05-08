@@ -78,7 +78,8 @@ graph TD
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-middleware/mq-mqtt-examples/](../../../code-examples/04-middleware/mq-mqtt-examples/)
+> 💻 完整可运行代码：[code-examples/04-middleware/mq-mqtt-examples/](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-mqtt-examples/)
+> <!-- 本地路径：code-examples/04-middleware/mq-mqtt-examples/ -->
 
 ## 相关模块
 

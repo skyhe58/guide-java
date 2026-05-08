@@ -149,7 +149,8 @@ public int[] topKFrequent(int[] nums, int k) {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/05-heap/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/05-heap/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/05-heap/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/05-heap/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/05-heap/ -->
 
 ## 常见面试题
 

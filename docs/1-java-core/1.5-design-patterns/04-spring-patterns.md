@@ -381,7 +381,8 @@ Spring AOP 使用 JDK 动态代理和 CGLIB 两种方式。默认情况下，如
 
 设计模式中的单例是类级别的，通过私有构造方法保证一个类只有一个实例。Spring 的单例是容器级别的，通过 `ConcurrentHashMap`（singletonObjects）缓存实现，同一个类可以注册多个不同名称的 Bean 实例。Spring 单例不需要私有构造方法，也不需要 static 方法，完全由容器管理生命周期。
 
-> 💻 完整代码说明：[SpringPatternsDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/spring/SpringPatternsDemo.java)
+> 💻 完整代码说明：[SpringPatternsDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/spring/SpringPatternsDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/spring/SpringPatternsDemo.java -->
 
 ## 参考资料
 

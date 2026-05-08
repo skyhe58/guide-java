@@ -193,7 +193,8 @@ public int[] maxSlidingWindow(int[] nums, int k) {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/stack/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/stack/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/stack/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/stack/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/stack/ -->
 
 ## 常见面试题
 

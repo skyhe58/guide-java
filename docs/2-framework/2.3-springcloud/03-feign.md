@@ -152,7 +152,8 @@ public class UserClientFallbackFactory implements FallbackFactory<UserClient> {
 }
 ```
 
-> 💻 完整可运行代码：[FeignDemo.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignDemo.java)
+> 💻 完整可运行代码：[FeignDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignDemo.java -->
 
 ## 常见面试题
 
@@ -238,7 +239,8 @@ curl http://localhost:8090/demo/feign/users
 curl http://localhost:8090/demo/feign/fallback
 ```
 
-> 💻 Spring Cloud 实战代码：[FeignController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignController.java) | [UserFeignClient.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/UserFeignClient.java)
+> 💻 Spring Cloud 实战代码：[FeignController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignController.java) | [UserFeignClient.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/UserFeignClient.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignController.java -->
 
 ## 参考资料
 

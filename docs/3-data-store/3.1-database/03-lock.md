@@ -186,7 +186,8 @@ SHOW VARIABLES LIKE 'innodb_lock_wait_timeout';
 SHOW VARIABLES LIKE 'innodb_deadlock_detect';
 ```
 
-> 💻 完整可运行代码：[LockDemo.java](../../../code-examples/03-data-store/database-examples/src/main/java/com/example/database/lock/LockDemo.java)
+> 💻 完整可运行代码：[LockDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/database-examples/src/main/java/com/example/database/lock/LockDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/database-examples/src/main/java/com/example/database/lock/LockDemo.java -->
 >
 > ⚠️ 需要 MySQL 环境：`docker compose -f docker/docker-compose.yml up -d mysql`
 

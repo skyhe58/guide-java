@@ -180,7 +180,8 @@ public class OrderService {
 }
 ```
 
-> 💻 完整可运行代码：[TransactionDemo.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/transaction/TransactionDemo.java)
+> 💻 完整可运行代码：[TransactionDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/transaction/TransactionDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/transaction/TransactionDemo.java -->
 
 ## 常见面试题
 

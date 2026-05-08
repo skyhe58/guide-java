@@ -74,7 +74,8 @@ graph TD
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/06-devops/monitoring-examples/](../../../code-examples/06-devops/monitoring-examples/)
+> 💻 完整可运行代码：[code-examples/06-devops/monitoring-examples/](https://github.com/skyhe58/guide-java/tree/main/code-examples/06-devops/monitoring-examples/)
+> <!-- 本地路径：code-examples/06-devops/monitoring-examples/ -->
 
 ## 相关模块
 

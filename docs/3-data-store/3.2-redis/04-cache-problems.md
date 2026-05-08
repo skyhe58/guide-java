@@ -257,7 +257,8 @@ public Object getById(Long id) {
 }
 ```
 
-> 💻 完整可运行代码：[CacheProblemsDemo.java](../../../code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/cache/CacheProblemsDemo.java)
+> 💻 完整可运行代码：[CacheProblemsDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/cache/CacheProblemsDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/cache/CacheProblemsDemo.java -->
 
 ## 常见面试题
 

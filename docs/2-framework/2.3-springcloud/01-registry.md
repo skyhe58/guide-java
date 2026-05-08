@@ -145,7 +145,8 @@ public class ConsulServiceApplication {
 }
 ```
 
-> 💻 完整可运行代码：[RegistryDemo.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/registry/RegistryDemo.java)
+> 💻 完整可运行代码：[RegistryDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/registry/RegistryDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/registry/RegistryDemo.java -->
 
 ## 常见面试题
 
@@ -234,7 +235,8 @@ curl http://localhost:8090/demo/registry/services
 curl http://localhost:8090/demo/registry/self
 ```
 
-> 💻 Spring Cloud 实战代码：[RegistryController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/registry/RegistryController.java)
+> 💻 Spring Cloud 实战代码：[RegistryController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/registry/RegistryController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/registry/RegistryController.java -->
 
 ## 参考资料
 

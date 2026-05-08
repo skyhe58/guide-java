@@ -238,7 +238,8 @@ public class RabbitMQConfig {
 }
 ```
 
-> 💻 完整可运行代码：[SpringIntegrationDemo.java](../../../code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/spring/SpringIntegrationDemo.java)
+> 💻 完整可运行代码：[SpringIntegrationDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/spring/SpringIntegrationDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/spring/SpringIntegrationDemo.java -->
 >
 > ⚠️ 需要 RabbitMQ 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

@@ -277,7 +277,8 @@ for (Shape s : shapes) {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/oop/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/oop/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/oop/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/oop/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/oop/ -->
 
 ## 常见面试题
 

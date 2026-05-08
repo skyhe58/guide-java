@@ -188,7 +188,8 @@ sequenceDiagram
 
 ## 代码示例
 
-> 💻 完整可运行代码：[CrudDemo.java](../../../code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/crud/CrudDemo.java)
+> 💻 完整可运行代码：[CrudDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/crud/CrudDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/crud/CrudDemo.java -->
 >
 > ⚠️ 需要 ES 环境：`docker compose -f docker/docker-compose.es.yml up -d`
 

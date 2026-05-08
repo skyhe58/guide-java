@@ -107,7 +107,8 @@ public class TaskDemo {
 }
 ```
 
-> 💻 完整可运行代码：[TaskDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/task/TaskDemo.java)
+> 💻 完整可运行代码：[TaskDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/task/TaskDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/task/TaskDemo.java -->
 
 ## 常见面试题
 
@@ -153,7 +154,8 @@ curl http://localhost:8090/demo/task/status
 curl -X POST http://localhost:8090/demo/task/trigger
 ```
 
-> 💻 Spring Cloud 实战代码：[ScheduledTaskController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/task/ScheduledTaskController.java)
+> 💻 Spring Cloud 实战代码：[ScheduledTaskController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/task/ScheduledTaskController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/task/ScheduledTaskController.java -->
 
 ## 参考资料
 

@@ -100,7 +100,8 @@ thread.start();
 System.out.println(thread.getState()); // RUNNABLE
 ```
 
-> 💻 完整可运行代码：[ThreadLifecycleDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/thread/ThreadLifecycleDemo.java)
+> 💻 完整可运行代码：[ThreadLifecycleDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/thread/ThreadLifecycleDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/thread/ThreadLifecycleDemo.java -->
 
 ## 常见面试题
 

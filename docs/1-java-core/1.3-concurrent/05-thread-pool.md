@@ -177,7 +177,8 @@ ThreadPoolExecutor executor = new ThreadPoolExecutor(
 );
 ```
 
-> 💻 完整可运行代码：[ThreadPoolDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/threadpool/ThreadPoolDemo.java)
+> 💻 完整可运行代码：[ThreadPoolDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/threadpool/ThreadPoolDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/threadpool/ThreadPoolDemo.java -->
 
 ## 常见面试题
 

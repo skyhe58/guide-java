@@ -161,7 +161,8 @@ DCLSingleton deserialized = (DCLSingleton) ois.readObject(); // 新实例！
 - 反射防护：在构造方法中检查实例是否已存在，已存在则抛异常
 - 序列化防护：实现 `readResolve()` 方法返回已有实例
 
-> 💻 完整可运行代码：[SingletonDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/SingletonDemo.java)
+> 💻 完整可运行代码：[SingletonDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/SingletonDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/SingletonDemo.java -->
 
 ## 二、工厂模式（Factory）
 
@@ -242,7 +243,8 @@ classDiagram
 - 创建一族相关产品（如：MySQL 的 Connection + Statement + ResultSet）
 - 适用于产品族的场景，但新增产品类型时需要修改所有工厂
 
-> 💻 完整可运行代码：[FactoryDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/FactoryDemo.java)
+> 💻 完整可运行代码：[FactoryDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/FactoryDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/FactoryDemo.java -->
 
 ## 三、建造者模式（Builder）
 
@@ -290,7 +292,8 @@ User user = User.builder()
 - `Stream.builder()`
 - `HttpRequest.newBuilder().uri(...).header(...).build()`
 
-> 💻 完整可运行代码：[BuilderDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/BuilderDemo.java)
+> 💻 完整可运行代码：[BuilderDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/BuilderDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/creational/BuilderDemo.java -->
 
 ## 四、原型模式（Prototype）
 

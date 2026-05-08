@@ -198,7 +198,8 @@ EXPLAIN SELECT * FROM user WHERE name = '张三';
 EXPLAIN SELECT * FROM user WHERE age = 25;
 ```
 
-> 💻 完整可运行代码：[IndexDemo.java](../../../code-examples/03-data-store/database-examples/src/main/java/com/example/database/index_demo/IndexDemo.java)
+> 💻 完整可运行代码：[IndexDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/database-examples/src/main/java/com/example/database/index_demo/IndexDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/database-examples/src/main/java/com/example/database/index_demo/IndexDemo.java -->
 >
 > ⚠️ 需要 MySQL 环境：`docker compose -f docker/docker-compose.yml up -d mysql`
 

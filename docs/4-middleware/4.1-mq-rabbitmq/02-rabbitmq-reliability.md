@@ -203,7 +203,8 @@ public static void manualAckDemo() {
 }
 ```
 
-> 💻 完整可运行代码：[ReliabilityDemo.java](../../../code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/reliability/ReliabilityDemo.java)
+> 💻 完整可运行代码：[ReliabilityDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/reliability/ReliabilityDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/reliability/ReliabilityDemo.java -->
 >
 > ⚠️ 需要 RabbitMQ 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

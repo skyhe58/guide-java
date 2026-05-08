@@ -166,7 +166,8 @@ data:
   password: cGFzc3dvcmQ=
 ```
 
-> 💻 完整部署示例：[code-examples/06-devops/docker-k8s-examples/k8s/deployment.yaml](../../../code-examples/06-devops/docker-k8s-examples/k8s/deployment.yaml)
+> 💻 完整部署示例：[code-examples/06-devops/docker-k8s-examples/k8s/deployment.yaml](https://github.com/skyhe58/guide-java/tree/main/code-examples/06-devops/docker-k8s-examples/k8s/deployment.yaml)
+> <!-- 本地路径：code-examples/06-devops/docker-k8s-examples/k8s/deployment.yaml -->
 
 ## 常见面试题
 

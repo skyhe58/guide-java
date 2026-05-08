@@ -227,7 +227,8 @@ public class NacosDemo {
 }
 ```
 
-> 💻 完整可运行代码：[NacosDemo.java](../../../code-examples/04-middleware/registry-examples/src/main/java/com/example/middleware/registry/nacos/NacosDemo.java)
+> 💻 完整可运行代码：[NacosDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/registry-examples/src/main/java/com/example/middleware/registry/nacos/NacosDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/registry-examples/src/main/java/com/example/middleware/registry/nacos/NacosDemo.java -->
 
 ## 常见面试题
 

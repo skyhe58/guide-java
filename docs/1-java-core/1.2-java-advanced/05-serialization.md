@@ -131,7 +131,8 @@ String json = mapper.writeValueAsString(user);
 User deserialized = mapper.readValue(json, User.class);
 ```
 
-> 💻 完整可运行代码：[SerializationDemo.java](../../../code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/serialization/SerializationDemo.java)
+> 💻 完整可运行代码：[SerializationDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/serialization/SerializationDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/serialization/SerializationDemo.java -->
 
 ## 常见面试题
 

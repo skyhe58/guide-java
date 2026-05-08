@@ -189,7 +189,8 @@ try {
 }
 ```
 
-> 💻 完整可运行代码：[KafkaReliabilityDemo.java](../../../code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/reliability/KafkaReliabilityDemo.java)
+> 💻 完整可运行代码：[KafkaReliabilityDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/reliability/KafkaReliabilityDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/reliability/KafkaReliabilityDemo.java -->
 >
 > ⚠️ 需要 Kafka 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

@@ -320,7 +320,8 @@ public class CollectionsDemo {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/collections/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/collections/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/collections/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/collections/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/collections/ -->
 
 ## 常见面试题
 

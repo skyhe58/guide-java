@@ -182,7 +182,8 @@ public class SnowflakeIdGenerator {
 }
 ```
 
-> 💻 完整可运行代码：[DistributedIdDemo.java](../../../code-examples/03-data-store/database-examples/src/main/java/com/example/database/id/DistributedIdDemo.java)
+> 💻 完整可运行代码：[DistributedIdDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/database-examples/src/main/java/com/example/database/id/DistributedIdDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/database-examples/src/main/java/com/example/database/id/DistributedIdDemo.java -->
 
 ## 常见面试题
 

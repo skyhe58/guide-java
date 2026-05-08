@@ -124,7 +124,8 @@ public class CacheConfig {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[CacheDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/cache/CacheDemo.java)
+> 💻 完整可运行代码：[CacheDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/cache/CacheDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/cache/CacheDemo.java -->
 
 ## 常见面试题
 
@@ -176,7 +177,8 @@ curl http://localhost:8090/demo/cache/get/name
 curl http://localhost:8090/demo/cache/user/1
 ```
 
-> 💻 Spring Cloud 实战代码：[RedisCacheController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/cache/RedisCacheController.java)
+> 💻 Spring Cloud 实战代码：[RedisCacheController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/cache/RedisCacheController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/cache/RedisCacheController.java -->
 
 ## 参考资料
 

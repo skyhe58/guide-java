@@ -542,7 +542,8 @@ public class AppConfig {
 }
 ```
 
-> 💻 完整可运行代码：[ConfigDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/config/ConfigDemo.java)
+> 💻 完整可运行代码：[ConfigDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/config/ConfigDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/config/ConfigDemo.java -->
 
 ## 常见面试题
 

@@ -153,7 +153,8 @@ public class SpringBootApp {
 }
 ```
 
-> 💻 完整可运行代码：[SpringBootApp.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/SpringBootApp.java)
+> 💻 完整可运行代码：[SpringBootApp.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/SpringBootApp.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/SpringBootApp.java -->
 
 ## 常见面试题
 

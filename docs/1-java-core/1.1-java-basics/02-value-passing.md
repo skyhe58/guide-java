@@ -168,7 +168,8 @@ public class ValuePassingDemo {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/datatypes/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/datatypes/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/datatypes/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/datatypes/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/datatypes/ -->
 
 ## 常见面试题
 

@@ -124,7 +124,8 @@ UserServiceImpl proxy = (UserServiceImpl) enhancer.create();
 - 目标类没有实现接口 → 使用 CGLIB 代理
 - 可通过 `@EnableAspectJAutoProxy(proxyTargetClass = true)` 强制使用 CGLIB
 
-> 💻 完整可运行代码：[ProxyPatternDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/ProxyPatternDemo.java)
+> 💻 完整可运行代码：[ProxyPatternDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/ProxyPatternDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/ProxyPatternDemo.java -->
 
 ## 二、适配器模式（Adapter）
 
@@ -164,7 +165,8 @@ classDiagram
 - Spring MVC `HandlerAdapter`：适配不同类型的 Controller
 - `Arrays.asList()`：将数组适配为 List
 
-> 💻 完整可运行代码：[AdapterDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/AdapterDemo.java)
+> 💻 完整可运行代码：[AdapterDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/AdapterDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/AdapterDemo.java -->
 
 ## 三、装饰器模式（Decorator）
 
@@ -231,7 +233,8 @@ flowchart LR
     C -->|提供| D[缓冲+数据类型读取+文件读取]
 ```
 
-> 💻 完整可运行代码：[DecoratorDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/DecoratorDemo.java)
+> 💻 完整可运行代码：[DecoratorDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/DecoratorDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/structural/DecoratorDemo.java -->
 
 ## 四、门面/外观模式（Facade）
 

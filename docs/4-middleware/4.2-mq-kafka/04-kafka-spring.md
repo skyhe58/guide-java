@@ -272,7 +272,8 @@ public class KafkaService {
 }
 ```
 
-> 💻 完整可运行代码：[KafkaSpringDemo.java](../../../code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/spring/KafkaSpringDemo.java)
+> 💻 完整可运行代码：[KafkaSpringDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/spring/KafkaSpringDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/spring/KafkaSpringDemo.java -->
 >
 > ⚠️ 需要 Kafka 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

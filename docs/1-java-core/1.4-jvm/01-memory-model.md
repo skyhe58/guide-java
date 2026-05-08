@@ -266,7 +266,8 @@ public static void stackOverflow() {
 // 使用动态代理或 CGLIB 不断生成新类，耗尽元空间
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../memory/MemoryAreaDemo.java](../../../code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/memory/MemoryAreaDemo.java)
+> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../memory/MemoryAreaDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/memory/MemoryAreaDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/memory/MemoryAreaDemo.java -->
 
 ## 常见面试题
 

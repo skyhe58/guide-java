@@ -241,7 +241,8 @@ curl http://localhost:8500/v1/kv/config/springcloud-demo/data -X PUT -d 'custom.
 
 Spring Cloud 项目通过 Consul KV 实现配置中心功能，服务启动时自动从 Consul 拉取配置，支持 `@RefreshScope` 热更新。
 
-> 💻 Spring Cloud 实战代码：[application.yml](../../../code-examples/02-framework/springcloud-examples/src/main/resources/application.yml)
+> 💻 Spring Cloud 实战代码：[application.yml](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/resources/application.yml)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/resources/application.yml -->
 
 ## 参考资料
 

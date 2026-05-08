@@ -194,7 +194,8 @@ public static void delayMessageDemo() {
 }
 ```
 
-> 💻 完整可运行代码：[AdvancedDemo.java](../../../code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/advanced/AdvancedDemo.java)
+> 💻 完整可运行代码：[AdvancedDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/advanced/AdvancedDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/advanced/AdvancedDemo.java -->
 >
 > ⚠️ 需要 RabbitMQ 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

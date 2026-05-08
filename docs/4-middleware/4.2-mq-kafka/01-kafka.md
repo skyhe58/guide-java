@@ -186,7 +186,8 @@ KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 consumer.subscribe(Collections.singletonList("orders"));
 ```
 
-> 💻 完整可运行代码：[KafkaCoreDemo.java](../../../code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/core/KafkaCoreDemo.java)
+> 💻 完整可运行代码：[KafkaCoreDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/core/KafkaCoreDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/core/KafkaCoreDemo.java -->
 >
 > ⚠️ 需要 Kafka 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

@@ -137,7 +137,8 @@ public static void multipartUploadDemo() {
 }
 ```
 
-> 💻 完整可运行代码：[MinIODemo.java](../../../code-examples/03-data-store/minio-examples/src/main/java/com/example/minio/MinIODemo.java)
+> 💻 完整可运行代码：[MinIODemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/minio-examples/src/main/java/com/example/minio/MinIODemo.java)
+> <!-- 本地路径：code-examples/03-data-store/minio-examples/src/main/java/com/example/minio/MinIODemo.java -->
 
 ## 常见面试题
 

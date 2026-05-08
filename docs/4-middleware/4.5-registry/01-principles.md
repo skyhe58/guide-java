@@ -211,7 +211,8 @@ public class RegistryPrincipleDemo {
 }
 ```
 
-> 💻 完整可运行代码：[ConsulDemo.java](../../../code-examples/04-middleware/registry-examples/src/main/java/com/example/middleware/registry/consul/ConsulDemo.java)
+> 💻 完整可运行代码：[ConsulDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/registry-examples/src/main/java/com/example/middleware/registry/consul/ConsulDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/registry-examples/src/main/java/com/example/middleware/registry/consul/ConsulDemo.java -->
 
 ## 常见面试题
 

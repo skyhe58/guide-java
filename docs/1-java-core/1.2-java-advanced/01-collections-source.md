@@ -244,7 +244,8 @@ lru.get("a");       // 访问 a，a 移到尾部
 lru.put("d", "4");  // 超过容量，移除最久未使用的 b
 ```
 
-> 💻 完整可运行代码：[CollectionSourceDemo.java](../../../code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/collections/CollectionSourceDemo.java)
+> 💻 完整可运行代码：[CollectionSourceDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/collections/CollectionSourceDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/collections/CollectionSourceDemo.java -->
 
 ## 常见面试题
 

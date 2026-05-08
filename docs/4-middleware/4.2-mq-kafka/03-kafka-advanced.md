@@ -237,7 +237,8 @@ consumer.commitAsync((offsets, exception) -> {
 });
 ```
 
-> 💻 完整可运行代码：[KafkaAdvancedDemo.java](../../../code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/advanced/KafkaAdvancedDemo.java)
+> 💻 完整可运行代码：[KafkaAdvancedDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/advanced/KafkaAdvancedDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-kafka-examples/src/main/java/com/example/mq/kafka/advanced/KafkaAdvancedDemo.java -->
 >
 > ⚠️ 需要 Kafka 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

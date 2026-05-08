@@ -74,7 +74,8 @@ docker run -d -p 9000:9000 -p 9001:9001 \
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-data-store/minio-examples/](../../../code-examples/03-data-store/minio-examples/)
+> 💻 完整可运行代码：[code-examples/03-data-store/minio-examples/](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/minio-examples/)
+> <!-- 本地路径：code-examples/03-data-store/minio-examples/ -->
 
 ## 相关模块
 

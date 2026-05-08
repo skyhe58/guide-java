@@ -189,7 +189,8 @@ public class RedisService {
 }
 ```
 
-> 💻 完整可运行代码：[RedisIntegrationDemo.java](../../../code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/spring/RedisIntegrationDemo.java)
+> 💻 完整可运行代码：[RedisIntegrationDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/spring/RedisIntegrationDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/spring/RedisIntegrationDemo.java -->
 >
 > ⚠️ 需要 Redis 环境：`docker compose -f docker/docker-compose.yml up -d redis`
 

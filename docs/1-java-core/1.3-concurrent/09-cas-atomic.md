@@ -138,7 +138,8 @@ adder.increment();
 long total = adder.sum();
 ```
 
-> 💻 完整可运行代码：[CASDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/cas/CASDemo.java)
+> 💻 完整可运行代码：[CASDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/cas/CASDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/cas/CASDemo.java -->
 
 ## 常见面试题
 

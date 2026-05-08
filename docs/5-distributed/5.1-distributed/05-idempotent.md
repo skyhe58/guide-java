@@ -211,7 +211,8 @@ public class TokenIdempotent {
 }
 ```
 
-> 💻 完整可运行代码：[IdempotentDemo.java](../../../code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/idempotent/IdempotentDemo.java)
+> 💻 完整可运行代码：[IdempotentDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/idempotent/IdempotentDemo.java)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/idempotent/IdempotentDemo.java -->
 
 ## 常见面试题
 

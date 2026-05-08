@@ -128,7 +128,8 @@ kubectl run -i --tty load-generator --rm --image=busybox -- /bin/sh
 # wget -q -O- http://java-app-svc/api/test
 ```
 
-> 💻 完整 HPA 配置：[code-examples/06-devops/docker-k8s-examples/k8s/hpa.yaml](../../../code-examples/06-devops/docker-k8s-examples/k8s/hpa.yaml)
+> 💻 完整 HPA 配置：[code-examples/06-devops/docker-k8s-examples/k8s/hpa.yaml](https://github.com/skyhe58/guide-java/tree/main/code-examples/06-devops/docker-k8s-examples/k8s/hpa.yaml)
+> <!-- 本地路径：code-examples/06-devops/docker-k8s-examples/k8s/hpa.yaml -->
 
 ## 常见面试题
 

@@ -279,7 +279,8 @@ while (cl != null) {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../classloading/ClassLoaderDemo.java](../../../code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/03-classloading/ClassLoaderDemo.java)
+> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../classloading/ClassLoaderDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/03-classloading/ClassLoaderDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/03-classloading/ClassLoaderDemo.java -->
 
 ## 常见面试题
 

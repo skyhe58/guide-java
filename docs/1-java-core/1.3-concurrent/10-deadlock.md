@@ -132,7 +132,8 @@ synchronized (first) {
 }
 ```
 
-> 💻 完整可运行代码：[DeadlockDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/10-deadlock/DeadlockDemo.java)
+> 💻 完整可运行代码：[DeadlockDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/10-deadlock/DeadlockDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/10-deadlock/DeadlockDemo.java -->
 
 ## 常见面试题
 

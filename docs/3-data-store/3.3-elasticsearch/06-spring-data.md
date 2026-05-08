@@ -242,7 +242,8 @@ public class ElasticsearchConfig extends ElasticsearchConfiguration {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[SpringDataDemo.java](../../../code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/spring/SpringDataDemo.java)
+> 💻 完整可运行代码：[SpringDataDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/spring/SpringDataDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/spring/SpringDataDemo.java -->
 >
 > ⚠️ 需要 ES 环境：`docker compose -f docker/docker-compose.es.yml up -d`
 

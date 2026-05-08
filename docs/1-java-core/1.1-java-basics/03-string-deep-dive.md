@@ -190,7 +190,8 @@ public class StringDemo {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/string/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/string/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/string/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/string/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/string/ -->
 
 ## 常见面试题
 

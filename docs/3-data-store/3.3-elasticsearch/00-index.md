@@ -99,7 +99,8 @@ curl http://localhost:9200
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-data-store/elasticsearch-examples/](../../../code-examples/03-data-store/elasticsearch-examples/)
+> 💻 完整可运行代码：[code-examples/03-data-store/elasticsearch-examples/](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/elasticsearch-examples/)
+> <!-- 本地路径：code-examples/03-data-store/elasticsearch-examples/ -->
 
 ## 相关模块
 

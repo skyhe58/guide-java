@@ -216,7 +216,8 @@ ZADD leaderboard 100 "player1" 200 "player2" 150 "player3"
 ZREVRANGE leaderboard 0 9 WITHSCORES       // Top 10
 ```
 
-> 💻 完整可运行代码：[DataStructureDemo.java](../../../code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/datastructure/DataStructureDemo.java)
+> 💻 完整可运行代码：[DataStructureDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/datastructure/DataStructureDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/redis-examples/src/main/java/com/example/redis/datastructure/DataStructureDemo.java -->
 >
 > ⚠️ 需要 Redis 环境：`docker compose -f docker/docker-compose.yml up -d redis`
 

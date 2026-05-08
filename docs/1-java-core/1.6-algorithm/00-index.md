@@ -112,7 +112,8 @@ graph LR
 | 739 | 每日温度 | 🟡 Medium | 栈 | 🔥🔥 |
 | 1143 | 最长公共子序列 | 🟡 Medium | 动态规划 | 🔥🔥 |
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/ -->
 
 ## 参考资料
 

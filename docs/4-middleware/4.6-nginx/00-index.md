@@ -103,7 +103,8 @@ curl http://localhost:80
 
 ## 配置示例
 
-> 💻 完整配置文件：[code-examples/04-middleware/nginx-examples/conf/](../../../code-examples/04-middleware/nginx-examples/conf/)
+> 💻 完整配置文件：[code-examples/04-middleware/nginx-examples/conf/](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/nginx-examples/conf/)
+> <!-- 本地路径：code-examples/04-middleware/nginx-examples/conf/ -->
 
 ## 相关模块
 

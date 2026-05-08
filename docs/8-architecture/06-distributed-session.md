@@ -101,7 +101,8 @@ JWT 结构：`Header.Payload.Signature`
 
 本项目提供了 Redis Session 集中存储和 JWT Token 两种分布式会话方案的实战示例，可以直接运行体验登录、会话管理、Token 签发与验证等核心流程。
 
-> 💻 实战代码：[SessionController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/session/SessionController.java) | [JwtUtil.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/session/JwtUtil.java)
+> 💻 实战代码：[SessionController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/session/SessionController.java) | [JwtUtil.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/session/JwtUtil.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/session/SessionController.java -->
 
 **启动步骤：**
 

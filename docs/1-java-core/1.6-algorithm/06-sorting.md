@@ -196,7 +196,8 @@ private void siftDown(int[] arr, int i, int n) {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/sort/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/sort/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/sort/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/sort/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/sort/ -->
 
 ## 常见面试题
 

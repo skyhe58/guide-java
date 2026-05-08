@@ -159,9 +159,11 @@ graph LR
 
 CAP 和 BASE 是理论概念，没有直接的代码实现。但可以通过以下代码示例理解其应用：
 
-> 💻 分布式锁（CP 思想）：[DistributedLockCompare.java](../../../code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/lock/DistributedLockCompare.java)
+> 💻 分布式锁（CP 思想）：[DistributedLockCompare.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/lock/DistributedLockCompare.java)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/lock/DistributedLockCompare.java -->
 >
-> 💻 分布式事务（BASE 思想）：[DistributedTransactionDemo.java](../../../code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/transaction/DistributedTransactionDemo.java)
+> 💻 分布式事务（BASE 思想）：[DistributedTransactionDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/transaction/DistributedTransactionDemo.java)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/transaction/DistributedTransactionDemo.java -->
 
 ## 常见面试题
 

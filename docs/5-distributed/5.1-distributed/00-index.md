@@ -89,7 +89,8 @@ graph TD
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/05-distributed/distributed-examples/](../../../code-examples/05-distributed/distributed-examples/)
+> 💻 完整可运行代码：[code-examples/05-distributed/distributed-examples/](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/ -->
 
 ## 相关模块
 

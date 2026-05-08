@@ -179,7 +179,8 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
 }
 ```
 
-> 💻 完整可运行代码：[GatewayDemo.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/gateway/GatewayDemo.java)
+> 💻 完整可运行代码：[GatewayDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/gateway/GatewayDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/gateway/GatewayDemo.java -->
 
 ## 常见面试题
 
@@ -268,7 +269,8 @@ curl http://localhost:8080/api/demo/registry/services -H "Authorization: Bearer 
 curl http://localhost:8080/actuator/gateway/routes
 ```
 
-> 💻 Spring Cloud 实战代码：[springcloud-gateway](../../../code-examples/02-framework/springcloud-gateway/)
+> 💻 Spring Cloud 实战代码：[springcloud-gateway](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-gateway/)
+> <!-- 本地路径：code-examples/02-framework/springcloud-gateway/ -->
 
 ## 参考资料
 

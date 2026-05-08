@@ -132,7 +132,8 @@ CompletableFuture<UserDetail> result = userFuture
     .thenCombine(orderFuture, (user, orders) -> new UserDetail(user, orders));
 ```
 
-> 💻 完整可运行代码：[CompletableFutureDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/future/CompletableFutureDemo.java)
+> 💻 完整可运行代码：[CompletableFutureDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/future/CompletableFutureDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/future/CompletableFutureDemo.java -->
 
 ## 常见面试题
 

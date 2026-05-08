@@ -275,7 +275,8 @@ public class IODemo {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/io/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/io/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/io/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/io/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/io/ -->
 
 ## 常见面试题
 

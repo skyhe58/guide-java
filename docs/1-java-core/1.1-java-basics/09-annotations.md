@@ -183,7 +183,8 @@ public class TimerProcessor {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/annotations/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/annotations/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/annotations/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/annotations/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/annotations/ -->
 
 ## 常见面试题
 

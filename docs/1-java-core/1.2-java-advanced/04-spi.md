@@ -121,7 +121,8 @@ for (Serializer serializer : loaders) {
 }
 ```
 
-> 💻 完整可运行代码：[SPIDemo.java](../../../code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/spi/SPIDemo.java)
+> 💻 完整可运行代码：[SPIDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/spi/SPIDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/spi/SPIDemo.java -->
 
 ## 常见面试题
 

@@ -222,7 +222,8 @@ graph TD
 
 ## 代码示例
 
-> 💻 完整可运行代码：[DistributedLockCompare.java](../../../code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/lock/DistributedLockCompare.java)
+> 💻 完整可运行代码：[DistributedLockCompare.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/lock/DistributedLockCompare.java)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/lock/DistributedLockCompare.java -->
 
 ## 常见面试题
 

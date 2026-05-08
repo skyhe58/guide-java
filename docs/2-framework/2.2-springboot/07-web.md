@@ -141,7 +141,8 @@ public class WebConfig implements WebMvcConfigurer {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[WebDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/web/WebDemo.java)
+> 💻 完整可运行代码：[WebDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/web/WebDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/web/WebDemo.java -->
 
 ## 常见面试题
 
@@ -192,7 +193,8 @@ curl http://localhost:8090/demo/boot/exception/business
 curl -X POST http://localhost:8090/demo/boot/validate/user -H "Content-Type: application/json" -d '{"name":"test","email":"test@example.com","age":25}'
 ```
 
-> 💻 Spring Cloud 实战代码：[ExceptionController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/ExceptionController.java) | [ValidateController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/ValidateController.java)
+> 💻 Spring Cloud 实战代码：[ExceptionController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/ExceptionController.java) | [ValidateController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/ValidateController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/ExceptionController.java -->
 
 ## 参考资料
 

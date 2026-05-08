@@ -206,7 +206,8 @@ public class ReflectionDemo {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/reflection/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/reflection/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/reflection/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/reflection/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/reflection/ -->
 
 ## 常见面试题
 

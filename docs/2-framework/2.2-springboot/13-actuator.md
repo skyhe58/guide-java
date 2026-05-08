@@ -118,7 +118,8 @@ public class CustomEndpoint {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[ActuatorDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/actuator/ActuatorDemo.java)
+> 💻 完整可运行代码：[ActuatorDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/actuator/ActuatorDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/actuator/ActuatorDemo.java -->
 
 ## 常见面试题
 
@@ -165,7 +166,8 @@ curl http://localhost:8090/actuator/metrics
 curl http://localhost:8090/actuator/info
 ```
 
-> 💻 Spring Cloud 实战代码：[application.yml](../../../code-examples/02-framework/springcloud-examples/src/main/resources/application.yml)
+> 💻 Spring Cloud 实战代码：[application.yml](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/resources/application.yml)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/resources/application.yml -->
 
 ## 参考资料
 

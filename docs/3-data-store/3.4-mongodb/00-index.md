@@ -94,7 +94,8 @@ graph TD
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-data-store/mongodb-examples/](../../../code-examples/03-data-store/mongodb-examples/)
+> 💻 完整可运行代码：[code-examples/03-data-store/mongodb-examples/](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/mongodb-examples/)
+> <!-- 本地路径：code-examples/03-data-store/mongodb-examples/ -->
 
 ## 相关模块
 

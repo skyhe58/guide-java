@@ -107,7 +107,8 @@ graph LR
 
 本项目提供了 Cache Aside、Write Through、延迟双删三种缓存一致性方案的实战示例，可以直接运行体验不同策略下缓存与数据库的同步行为。
 
-> 💻 实战代码：[CacheConsistencyController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/consistency/CacheConsistencyController.java)
+> 💻 实战代码：[CacheConsistencyController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/consistency/CacheConsistencyController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/consistency/CacheConsistencyController.java -->
 
 **启动步骤：**
 

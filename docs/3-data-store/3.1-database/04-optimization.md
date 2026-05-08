@@ -130,7 +130,8 @@ EXPLAIN SELECT name, age FROM user WHERE name = '张三';  -- Using index
 EXPLAIN SELECT * FROM user WHERE name = '张三';           -- 需要回表
 ```
 
-> 💻 完整可运行代码：[OptimizationDemo.java](../../../code-examples/03-data-store/database-examples/src/main/java/com/example/database/optimization/OptimizationDemo.java)
+> 💻 完整可运行代码：[OptimizationDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/database-examples/src/main/java/com/example/database/optimization/OptimizationDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/database-examples/src/main/java/com/example/database/optimization/OptimizationDemo.java -->
 >
 > ⚠️ 需要 MySQL 环境：`docker compose -f docker/docker-compose.yml up -d mysql`
 

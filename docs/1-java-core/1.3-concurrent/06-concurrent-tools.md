@@ -124,7 +124,8 @@ latch.await(10, TimeUnit.SECONDS); // 等待所有服务检查完成
 System.out.println("所有服务健康检查完成");
 ```
 
-> 💻 完整可运行代码：[ConcurrentToolsDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/tools/ConcurrentToolsDemo.java)
+> 💻 完整可运行代码：[ConcurrentToolsDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/tools/ConcurrentToolsDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/tools/ConcurrentToolsDemo.java -->
 
 ## 常见面试题
 

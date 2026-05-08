@@ -220,7 +220,8 @@ public class LifecycleBean implements BeanNameAware, InitializingBean, Disposabl
 }
 ```
 
-> 💻 完整可运行代码：[IoCDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/ioc/IoCDemo.java)
+> 💻 完整可运行代码：[IoCDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/ioc/IoCDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/ioc/IoCDemo.java -->
 
 ## 常见面试题
 
@@ -312,7 +313,8 @@ curl http://localhost:8090/demo/boot/ioc/inject-types
 curl http://localhost:8090/demo/boot/ioc/prototype
 ```
 
-> 💻 Spring Cloud 实战代码：[IoCController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/IoCController.java)
+> 💻 Spring Cloud 实战代码：[IoCController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/IoCController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/IoCController.java -->
 
 ## 参考资料
 

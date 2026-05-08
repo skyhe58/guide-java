@@ -137,7 +137,8 @@ public class OrderService {
 }
 ```
 
-> 💻 完整可运行代码：[LoadBalancerDemo.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/loadbalancer/LoadBalancerDemo.java)
+> 💻 完整可运行代码：[LoadBalancerDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/loadbalancer/LoadBalancerDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/loadbalancer/LoadBalancerDemo.java -->
 
 ## 常见面试题
 
@@ -222,7 +223,8 @@ curl http://localhost:8090/demo/feign/users
 
 Spring Cloud LoadBalancer 集成在 OpenFeign 中自动生效，当通过 Feign 调用其他服务时，LoadBalancer 会自动从注册中心获取实例列表并进行负载均衡。
 
-> 💻 Spring Cloud 实战代码：[FeignController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignController.java)
+> 💻 Spring Cloud 实战代码：[FeignController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/feign/FeignController.java -->
 
 ## 参考资料
 

@@ -144,7 +144,8 @@ public class AgentDemo {
 }
 ```
 
-> 💻 完整代码示例：[code-examples/07-ai/ai-examples/src/main/java/com/example/ai/agent/AgentDemo.java](../../../code-examples/07-ai/ai-examples/src/main/java/com/example/ai/agent/AgentDemo.java)
+> 💻 完整代码示例：[code-examples/07-ai/ai-examples/src/main/java/com/example/ai/agent/AgentDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/07-ai/ai-examples/src/main/java/com/example/ai/agent/AgentDemo.java)
+> <!-- 本地路径：code-examples/07-ai/ai-examples/src/main/java/com/example/ai/agent/AgentDemo.java -->
 
 ## 常见面试题
 

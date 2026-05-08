@@ -156,7 +156,8 @@ public class LogDemoService {
 }
 ```
 
-> 💻 完整可运行代码：[LogDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/log/LogDemo.java)
+> 💻 完整可运行代码：[LogDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/log/LogDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/log/LogDemo.java -->
 
 ## 常见面试题
 
@@ -203,7 +204,8 @@ curl http://localhost:8090/demo/registry/services
 
 Spring Cloud 项目中使用 `logback-spring.xml` 配置了 traceId 日志格式，所有请求日志自动携带 `[traceId/spanId]` 字段，方便链路追踪和问题排查。
 
-> 💻 Spring Cloud 实战代码：[logback-spring.xml](../../../code-examples/02-framework/springcloud-examples/src/main/resources/logback-spring.xml)
+> 💻 Spring Cloud 实战代码：[logback-spring.xml](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/resources/logback-spring.xml)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/resources/logback-spring.xml -->
 
 ## 参考资料
 

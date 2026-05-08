@@ -371,7 +371,8 @@ public static void simulateDeadlock() {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../diagnostic/DiagnosticDemo.java](../../../code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/06-diagnostic/DiagnosticDemo.java)
+> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../diagnostic/DiagnosticDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/06-diagnostic/DiagnosticDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/06-diagnostic/DiagnosticDemo.java -->
 
 ## 常见面试题
 

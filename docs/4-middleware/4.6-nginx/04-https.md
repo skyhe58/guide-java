@@ -119,7 +119,8 @@ certbot renew --dry-run
 
 ## 代码示例
 
-> 💻 完整配置文件：[https.conf](../../../code-examples/04-middleware/nginx-examples/conf/https.conf)
+> 💻 完整配置文件：[https.conf](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/nginx-examples/conf/https.conf)
+> <!-- 本地路径：code-examples/04-middleware/nginx-examples/conf/https.conf -->
 >
 > ⚠️ 需要 Nginx 环境：`docker compose -f docker/docker-compose.nginx.yml up -d`
 

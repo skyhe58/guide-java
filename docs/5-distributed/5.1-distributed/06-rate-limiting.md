@@ -248,9 +248,11 @@ public class SlidingWindowRateLimiter {
 }
 ```
 
-> 💻 完整可运行代码：[RateLimitDemo.java](../../../code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/ratelimit/RateLimitDemo.java)
+> 💻 完整可运行代码：[RateLimitDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/ratelimit/RateLimitDemo.java)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/src/main/java/com/example/distributed/ratelimit/RateLimitDemo.java -->
 >
-> 🧪 单元测试：[RateLimitTest.java](../../../code-examples/05-distributed/distributed-examples/src/test/java/com/example/distributed/ratelimit/RateLimitTest.java)
+> 🧪 单元测试：[RateLimitTest.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/05-distributed/distributed-examples/src/test/java/com/example/distributed/ratelimit/RateLimitTest.java)
+> <!-- 本地路径：code-examples/05-distributed/distributed-examples/src/test/java/com/example/distributed/ratelimit/RateLimitTest.java -->
 
 ## 常见面试题
 
@@ -291,7 +293,8 @@ public class SlidingWindowRateLimiter {
 
 本项目提供了基于 Redis + Lua 脚本的分布式限流实战示例，涵盖固定窗口、滑动窗口、令牌桶三种算法的实际实现，可以直接运行体验不同限流策略的效果。
 
-> 💻 实战代码：[RateLimitController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/ratelimit/RateLimitController.java)
+> 💻 实战代码：[RateLimitController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/ratelimit/RateLimitController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/ratelimit/RateLimitController.java -->
 
 **启动步骤：**
 

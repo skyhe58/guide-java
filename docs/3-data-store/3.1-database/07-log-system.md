@@ -178,7 +178,8 @@ SHOW STATUS LIKE 'Innodb_buffer_pool%';           -- Buffer Pool 状态
 SHOW VARIABLES LIKE 'innodb_undo%';
 ```
 
-> 💻 完整可运行代码：[BinlogDemo.java](../../../code-examples/03-data-store/database-examples/src/main/java/com/example/database/binlog/BinlogDemo.java)（日志系统说明部分）
+> 💻 完整可运行代码：[BinlogDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/database-examples/src/main/java/com/example/database/binlog/BinlogDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/database-examples/src/main/java/com/example/database/binlog/BinlogDemo.java -->（日志系统说明部分）
 >
 > ⚠️ 需要 MySQL 环境：`docker compose -f docker/docker-compose.yml up -d mysql`
 

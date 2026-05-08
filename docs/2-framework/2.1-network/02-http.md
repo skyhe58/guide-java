@@ -180,7 +180,8 @@ System.out.println("状态码: " + response.statusCode());
 System.out.println("响应体: " + response.body());
 ```
 
-> 💻 完整可运行代码：[HttpDemo.java](../../../code-examples/02-framework/network-programming/src/main/java/com/example/network/http/HttpDemo.java)
+> 💻 完整可运行代码：[HttpDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/network-programming/src/main/java/com/example/network/http/HttpDemo.java)
+> <!-- 本地路径：code-examples/02-framework/network-programming/src/main/java/com/example/network/http/HttpDemo.java -->
 
 ## 常见面试题
 

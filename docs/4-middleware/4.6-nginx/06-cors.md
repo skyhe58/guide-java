@@ -131,7 +131,8 @@ server {
 
 ## 代码示例
 
-> 💻 完整配置文件：[cors.conf](../../../code-examples/04-middleware/nginx-examples/conf/cors.conf)
+> 💻 完整配置文件：[cors.conf](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/nginx-examples/conf/cors.conf)
+> <!-- 本地路径：code-examples/04-middleware/nginx-examples/conf/cors.conf -->
 >
 > ⚠️ 需要 Nginx 环境：`docker compose -f docker/docker-compose.nginx.yml up -d`
 

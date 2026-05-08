@@ -186,7 +186,8 @@ public static void topicExchangeDemo() {
 }
 ```
 
-> 💻 完整可运行代码：[RabbitMQCoreDemo.java](../../../code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/core/RabbitMQCoreDemo.java)
+> 💻 完整可运行代码：[RabbitMQCoreDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/core/RabbitMQCoreDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/mq-rabbitmq-examples/src/main/java/com/example/mq/rabbitmq/core/RabbitMQCoreDemo.java -->
 >
 > ⚠️ 需要 RabbitMQ 环境：`docker compose -f docker/docker-compose.mq.yml up -d`
 

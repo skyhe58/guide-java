@@ -103,7 +103,8 @@ public class AlipayStrategy implements PayStrategy {
 - `ThreadPoolExecutor` 的拒绝策略：`AbortPolicy`、`CallerRunsPolicy` 等
 - Spring `Resource` 接口：`ClassPathResource`、`FileSystemResource` 等
 
-> 💻 完整可运行代码：[StrategyDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/StrategyDemo.java)
+> 💻 完整可运行代码：[StrategyDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/StrategyDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/StrategyDemo.java -->
 
 ## 二、模板方法模式（Template Method）
 
@@ -184,7 +185,8 @@ protected final boolean tryAcquire(int acquires) {
 - `HttpServlet`：`service()` 是模板方法，`doGet()`、`doPost()` 由子类实现
 - `AbstractList`：`get()` 由子类实现，`iterator()` 等基于 `get()` 实现
 
-> 💻 完整可运行代码：[TemplateMethodDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/TemplateMethodDemo.java)
+> 💻 完整可运行代码：[TemplateMethodDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/TemplateMethodDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/TemplateMethodDemo.java -->
 
 ## 三、观察者模式（Observer）
 
@@ -241,7 +243,8 @@ sequenceDiagram
 - Google Guava `EventBus`
 - 消息队列（RabbitMQ/Kafka）本质上也是观察者模式的分布式实现
 
-> 💻 完整可运行代码：[ObserverDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/ObserverDemo.java)
+> 💻 完整可运行代码：[ObserverDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/ObserverDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/ObserverDemo.java -->
 
 ## 四、责任链模式（Chain of Responsibility）
 
@@ -289,7 +292,8 @@ flowchart LR
 - Netty `ChannelPipeline`：`ChannelHandler` 链
 - 审批流程：组长→经理→总监→VP
 
-> 💻 完整可运行代码：[ChainOfResponsibilityDemo.java](../../../code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/ChainOfResponsibilityDemo.java)
+> 💻 完整可运行代码：[ChainOfResponsibilityDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/ChainOfResponsibilityDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/design-patterns/src/main/java/com/example/patterns/behavioral/ChainOfResponsibilityDemo.java -->
 
 ## 五、状态模式（State）
 

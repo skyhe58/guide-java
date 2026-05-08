@@ -295,7 +295,8 @@ public class ApolloDemo {
 }
 ```
 
-> 💻 完整可运行代码：[ApolloDemo.java](../../../code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/apollo/ApolloDemo.java)
+> 💻 完整可运行代码：[ApolloDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/apollo/ApolloDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/apollo/ApolloDemo.java -->
 >
 > ⚠️ 运行前请启动 Apollo：`docker compose -f docker/docker-compose.apollo.yml up -d`
 

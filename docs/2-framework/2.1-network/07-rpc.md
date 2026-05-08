@@ -175,7 +175,8 @@ HelloService proxy = RPCClient.getProxy(HelloService.class, "localhost", 9090);
 String result = proxy.sayHello("World"); // 像调用本地方法一样
 ```
 
-> 💻 完整可运行代码：[RPCDemo.java](../../../code-examples/02-framework/network-programming/src/main/java/com/example/network/rpc/RPCDemo.java)
+> 💻 完整可运行代码：[RPCDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/network-programming/src/main/java/com/example/network/rpc/RPCDemo.java)
+> <!-- 本地路径：code-examples/02-framework/network-programming/src/main/java/com/example/network/rpc/RPCDemo.java -->
 >
 > 包含完整的简易 RPC 框架实现：动态代理 + Socket 通信 + Java 序列化
 

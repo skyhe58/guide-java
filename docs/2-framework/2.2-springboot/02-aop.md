@@ -171,7 +171,8 @@ public class LogAspect {
 }
 ```
 
-> 💻 完整可运行代码：[AopDemo.java](../../../code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/aop/AopDemo.java)
+> 💻 完整可运行代码：[AopDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/aop/AopDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springboot-examples/src/main/java/com/example/springboot/aop/AopDemo.java -->
 
 ## 常见面试题
 
@@ -249,7 +250,8 @@ curl http://localhost:8090/demo/boot/aop/log
 curl http://localhost:8090/demo/boot/aop/timing
 ```
 
-> 💻 Spring Cloud 实战代码：[AopController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/AopController.java)
+> 💻 Spring Cloud 实战代码：[AopController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/AopController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/boot/AopController.java -->
 
 ## 参考资料
 

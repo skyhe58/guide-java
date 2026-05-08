@@ -144,7 +144,8 @@ try {
 }
 ```
 
-> 💻 完整可运行代码：[ReentrantLockDemo.java](../../../code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/lock/ReentrantLockDemo.java)
+> 💻 完整可运行代码：[ReentrantLockDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/lock/ReentrantLockDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/concurrent-programming/src/main/java/com/example/concurrent/lock/ReentrantLockDemo.java -->
 
 ## 常见面试题
 

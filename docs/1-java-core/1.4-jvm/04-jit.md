@@ -243,7 +243,8 @@ static class Point {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../jit/JITDemo.java](../../../code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/04-jit/JITDemo.java)
+> 💻 完整可运行代码：[code-examples/01-java-core/jvm-deep-dive/.../jit/JITDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/04-jit/JITDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/jvm-deep-dive/src/main/java/com/example/jvm/04-jit/JITDemo.java -->
 
 ## 常见面试题
 

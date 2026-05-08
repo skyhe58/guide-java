@@ -138,7 +138,8 @@ spring:
         url-pattern: /druid/*
 ```
 
-> 💻 完整可运行代码：[ConnectionPoolDemo.java](../../../code-examples/03-data-store/database-examples/src/main/java/com/example/database/pool/ConnectionPoolDemo.java)
+> 💻 完整可运行代码：[ConnectionPoolDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/database-examples/src/main/java/com/example/database/pool/ConnectionPoolDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/database-examples/src/main/java/com/example/database/pool/ConnectionPoolDemo.java -->
 
 ## 常见面试题
 

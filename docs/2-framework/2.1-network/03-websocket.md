@@ -123,7 +123,8 @@ WebSocket ws = httpClient.newWebSocketBuilder()
 ws.sendText("Hello WebSocket!", true);
 ```
 
-> 💻 完整可运行代码：[WebSocketDemo.java](../../../code-examples/02-framework/network-programming/src/main/java/com/example/network/websocket/WebSocketDemo.java)
+> 💻 完整可运行代码：[WebSocketDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/network-programming/src/main/java/com/example/network/websocket/WebSocketDemo.java)
+> <!-- 本地路径：code-examples/02-framework/network-programming/src/main/java/com/example/network/websocket/WebSocketDemo.java -->
 
 ## 常见面试题
 

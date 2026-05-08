@@ -119,7 +119,8 @@ volumes:
   redis-data:
 ```
 
-> 💻 完整编排示例：[code-examples/06-devops/docker-k8s-examples/docker-compose.yml](../../../code-examples/06-devops/docker-k8s-examples/docker-compose.yml)
+> 💻 完整编排示例：[code-examples/06-devops/docker-k8s-examples/docker-compose.yml](https://github.com/skyhe58/guide-java/tree/main/code-examples/06-devops/docker-k8s-examples/docker-compose.yml)
+> <!-- 本地路径：code-examples/06-devops/docker-k8s-examples/docker-compose.yml -->
 
 ### 常用命令
 

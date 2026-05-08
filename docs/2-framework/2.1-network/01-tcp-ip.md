@@ -225,7 +225,8 @@ try (Socket socket = new Socket("localhost", 8080)) {
 }
 ```
 
-> 💻 完整可运行代码：[TCPDemo.java](../../../code-examples/02-framework/network-programming/src/main/java/com/example/network/tcp/TCPDemo.java)
+> 💻 完整可运行代码：[TCPDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/network-programming/src/main/java/com/example/network/tcp/TCPDemo.java)
+> <!-- 本地路径：code-examples/02-framework/network-programming/src/main/java/com/example/network/tcp/TCPDemo.java -->
 
 ## 常见面试题
 

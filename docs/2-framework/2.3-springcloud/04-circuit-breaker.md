@@ -177,7 +177,8 @@ public class OrderService {
 }
 ```
 
-> 💻 完整可运行代码：[CircuitBreakerDemo.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/circuitbreaker/CircuitBreakerDemo.java)
+> 💻 完整可运行代码：[CircuitBreakerDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/circuitbreaker/CircuitBreakerDemo.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/circuitbreaker/CircuitBreakerDemo.java -->
 
 ## 常见面试题
 
@@ -262,7 +263,8 @@ curl http://localhost:8090/demo/cb/fail
 curl http://localhost:8090/demo/cb/status
 ```
 
-> 💻 Spring Cloud 实战代码：[CircuitBreakerController.java](../../../code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/circuitbreaker/CircuitBreakerController.java)
+> 💻 Spring Cloud 实战代码：[CircuitBreakerController.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/circuitbreaker/CircuitBreakerController.java)
+> <!-- 本地路径：code-examples/02-framework/springcloud-examples/src/main/java/com/example/springcloud/circuitbreaker/CircuitBreakerController.java -->
 
 ## 参考资料
 

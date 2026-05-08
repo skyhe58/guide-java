@@ -167,7 +167,8 @@ t.start(); // start() happens-before 线程内操作
 t.join();  // 线程内操作 happens-before join() 返回
 ```
 
-> 💻 完整可运行代码：[JMMDemo.java](../../../code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/jmm/JMMDemo.java)
+> 💻 完整可运行代码：[JMMDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/jmm/JMMDemo.java)
+> <!-- 本地路径：code-examples/01-java-core/java-advanced/src/main/java/com/example/advanced/jmm/JMMDemo.java -->
 
 ## 常见面试题
 

@@ -108,7 +108,8 @@ public class VectorStoreDemo {
 }
 ```
 
-> 💻 完整代码示例：[code-examples/07-ai/ai-examples/src/main/java/com/example/ai/rag/RAGDemo.java](../../../code-examples/07-ai/ai-examples/src/main/java/com/example/ai/rag/RAGDemo.java)
+> 💻 完整代码示例：[code-examples/07-ai/ai-examples/src/main/java/com/example/ai/rag/RAGDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/07-ai/ai-examples/src/main/java/com/example/ai/rag/RAGDemo.java)
+> <!-- 本地路径：code-examples/07-ai/ai-examples/src/main/java/com/example/ai/rag/RAGDemo.java -->
 
 ## 常见面试题
 

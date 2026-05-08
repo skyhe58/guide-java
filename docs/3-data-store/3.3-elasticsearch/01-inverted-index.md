@@ -199,7 +199,8 @@ graph LR
 // 结果: ["java", "并发", "编程", "并发编程", "实战"]
 ```
 
-> 💻 完整可运行代码：[IndexDemo.java](../../../code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/index_demo/IndexDemo.java)
+> 💻 完整可运行代码：[IndexDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/index_demo/IndexDemo.java)
+> <!-- 本地路径：code-examples/03-data-store/elasticsearch-examples/src/main/java/com/example/es/index_demo/IndexDemo.java -->
 >
 > ⚠️ 需要 ES 环境：`docker compose -f docker/docker-compose.es.yml up -d`
 

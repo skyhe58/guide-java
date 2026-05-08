@@ -154,7 +154,8 @@ public int searchInsert(int[] nums, int target) {
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/search/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/search/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/search/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/search/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/algorithm/search/ -->
 
 ## 常见面试题
 

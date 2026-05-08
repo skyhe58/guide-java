@@ -252,7 +252,8 @@ public class StreamDemo {
 }
 ```
 
-> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/stream/](../../../code-examples/01-java-core/java-basics/src/main/java/com/example/basics/stream/)
+> 💻 完整可运行代码：[code-examples/01-java-core/java-basics/src/main/java/com/example/basics/stream/](https://github.com/skyhe58/guide-java/tree/main/code-examples/01-java-core/java-basics/src/main/java/com/example/basics/stream/)
+> <!-- 本地路径：code-examples/01-java-core/java-basics/src/main/java/com/example/basics/stream/ -->
 
 ## 常见面试题
 

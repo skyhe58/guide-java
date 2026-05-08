@@ -253,7 +253,8 @@ public class NacosConfigDemo {
 }
 ```
 
-> 💻 完整可运行代码：[NacosConfigDemo.java](../../../code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/nacos/NacosConfigDemo.java)
+> 💻 完整可运行代码：[NacosConfigDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/nacos/NacosConfigDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/nacos/NacosConfigDemo.java -->
 
 ## 常见面试题
 

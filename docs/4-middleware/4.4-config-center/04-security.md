@@ -256,7 +256,8 @@ public class ConfigSecurityDemo {
 }
 ```
 
-> 💻 完整可运行代码：[ConfigSecurityDemo.java](../../../code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/security/ConfigSecurityDemo.java)
+> 💻 完整可运行代码：[ConfigSecurityDemo.java](https://github.com/skyhe58/guide-java/tree/main/code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/security/ConfigSecurityDemo.java)
+> <!-- 本地路径：code-examples/04-middleware/config-center-examples/src/main/java/com/example/middleware/config/security/ConfigSecurityDemo.java -->
 
 ## 常见面试题
 
